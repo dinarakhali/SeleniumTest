@@ -15,8 +15,6 @@ public class ProjectsPage {
     private By createProjectButton = By.xpath("//button[@data-test='create-button']");
     private By skipSettingsButton = By.xpath("//button[@data-test='skip']");
     private By projectTitle = By.xpath("//h1[@data-test='project-heading']");
-    private By more = By.xpath("//div[@data-test-name='Тестовый проект 1']" +
-            "//following::div[@data-test='ring-dropdown project-app']");
     private By delete = By.xpath("//button[text()='Удалить']");
     private By projectNameForDeleteField = By.xpath("(//div[@data-test='ring-input'])[2]//input");
     private By deleteProjectButton = By.xpath("//button[.//span[text()='Удалить проект']]");
@@ -38,10 +36,16 @@ public class ProjectsPage {
         return driver.findElement(projectTitle).getText();
     }
 
-    public void deleteMyProject() {
+    public void deleteMyProject(String projectName) {
+        String locator = String.format("//div[@data-test-name='%s']//following::div[@data-test='ring-dropdown project-app']", projectName);
+        By more = By.xpath(locator);
         driver.findElement(more).click();
         driver.findElement(delete).click();
-        WaitUtils.waitForElementVisible(driver, projectNameForDeleteField).sendKeys("Тестовый проект 1");
+        WaitUtils.waitForElementVisible(driver, projectNameForDeleteField).sendKeys(projectName);
         driver.findElement(deleteProjectButton).click();
+    }
+
+    public boolean isProjectTitleVisible() {
+        return driver.findElement(projectTitle).isDisplayed();
     }
 }

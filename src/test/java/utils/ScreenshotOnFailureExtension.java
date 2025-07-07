@@ -4,6 +4,7 @@ import org.junit.jupiter.api.extension.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.slf4j.Logger;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -12,8 +13,11 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+import static org.slf4j.LoggerFactory.getLogger;
+
 public class ScreenshotOnFailureExtension implements AfterTestExecutionCallback, BeforeEachCallback {
     private WebDriver driver;
+    private static final Logger logger = getLogger(ScreenshotOnFailureExtension.class);
 
     public void setDriver(WebDriver driver) {
         this.driver = driver;
@@ -30,11 +34,6 @@ public class ScreenshotOnFailureExtension implements AfterTestExecutionCallback,
         if (testFailed && driver != null) {
             takeScreenshot(context);
         }
-
-        if (driver != null) {
-            driver.quit();
-            System.out.println("Драйвер закрыт");
-        }
     }
 
     private void takeScreenshot(ExtensionContext context) {
@@ -42,7 +41,7 @@ public class ScreenshotOnFailureExtension implements AfterTestExecutionCallback,
             File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             BufferedImage img = ImageIO.read(srcFile);
 
-            String testName = context.getDisplayName().replaceAll("[^а-яА-Яa-zA-Z0-9\\.\\-]", "_");
+            String testName = context.getDisplayName().replaceAll("[^а-яА-Яa-zA-Z0-9.\\-]", "_");
             String timestamp = LocalDateTime.now()
                     .format(DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss"));
 
@@ -53,9 +52,9 @@ public class ScreenshotOnFailureExtension implements AfterTestExecutionCallback,
 
             File destFile = new File(dir, testName + "_" + timestamp + ".png");
             ImageIO.write(img, "png", destFile);
-            System.out.println("Скриншот сохранён: " + destFile.getPath());
+            logger.info("Скриншот сохранён: " + destFile.getPath());
         } catch (IOException e) {
-            System.out.println("Ошибка при сохранении скриншота: " + e.getMessage());
+            logger.info("Ошибка при сохранении скриншота: " + e.getMessage());
         }
     }
 }

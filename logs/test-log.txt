@@ -1,0 +1,141 @@
+2025-07-07 12:44:10 [ForkJoinPool-1-worker-4] INFO  i.g.b.w.WebDriverManager - Using chromedriver 138.0.7204.92 (resolved driver for Chrome 138)
+2025-07-07 12:44:10 [ForkJoinPool-1-worker-2] INFO  i.g.b.w.WebDriverManager - Using chromedriver 138.0.7204.92 (resolved driver for Chrome 138)
+2025-07-07 12:44:10 [ForkJoinPool-1-worker-1] INFO  i.g.b.w.WebDriverManager - Using chromedriver 138.0.7204.92 (resolved driver for Chrome 138)
+2025-07-07 12:44:10 [ForkJoinPool-1-worker-3] INFO  i.g.b.w.WebDriverManager - Using chromedriver 138.0.7204.92 (resolved driver for Chrome 138)
+2025-07-07 12:44:10 [ForkJoinPool-1-worker-1] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\aduva\.cache\selenium\chromedriver\win64\138.0.7204.92\chromedriver.exe
+2025-07-07 12:44:10 [ForkJoinPool-1-worker-2] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\aduva\.cache\selenium\chromedriver\win64\138.0.7204.92\chromedriver.exe
+2025-07-07 12:44:10 [ForkJoinPool-1-worker-4] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\aduva\.cache\selenium\chromedriver\win64\138.0.7204.92\chromedriver.exe
+2025-07-07 12:44:10 [ForkJoinPool-1-worker-3] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\aduva\.cache\selenium\chromedriver\win64\138.0.7204.92\chromedriver.exe
+2025-07-07 12:44:26 [ForkJoinPool-1-worker-3] INFO  utils.BrowserUtils - Элемент не найден или не виден. Обновляем страницу...
+2025-07-07 12:44:26 [ForkJoinPool-1-worker-1] INFO  utils.BrowserUtils - Элемент не найден или не виден. Обновляем страницу...
+2025-07-07 12:44:32 [ForkJoinPool-1-worker-4] INFO  tests.BaseTest - Драйвер завершён после теста
+2025-07-07 12:44:33 [ForkJoinPool-1-worker-3] INFO  pages.MenuPage - Попытка 1 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58452/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa7cc972c2ec5f664a259d366c8c6113
+2025-07-07 12:44:35 [ForkJoinPool-1-worker-1] INFO  pages.MenuPage - Попытка 1 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58451/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07b78c0c3ba81d63868dc54492b1a16e
+2025-07-07 12:44:41 [ForkJoinPool-1-worker-3] INFO  u.ScreenshotOnFailureExtension - Скриншот сохранён: screenshots\_1__Task_1_2025-07-07_12-44-41.png
+2025-07-07 12:44:41 [ForkJoinPool-1-worker-3] INFO  tests.BaseTest - Драйвер завершён после теста
+2025-07-07 12:44:42 [ForkJoinPool-1-worker-4] INFO  utils.BrowserUtils - Элемент не найден или не виден. Обновляем страницу...
+2025-07-07 12:44:42 [ForkJoinPool-1-worker-1] INFO  tests.BaseTest - Драйвер завершён после теста
+2025-07-07 12:44:46 [ForkJoinPool-1-worker-2] INFO  u.ScreenshotOnFailureExtension - Скриншот сохранён: screenshots\2._Тест_добавления_задачи_на_доску_2025-07-07_12-44-46.png
+2025-07-07 12:44:46 [ForkJoinPool-1-worker-2] INFO  tests.BaseTest - Драйвер завершён после теста
+2025-07-07 12:44:53 [ForkJoinPool-1-worker-4] INFO  u.ScreenshotOnFailureExtension - Скриншот сохранён: screenshots\_2__user1__12345_2025-07-07_12-44-53.png
+2025-07-07 12:44:54 [ForkJoinPool-1-worker-4] INFO  tests.BaseTest - Драйвер завершён после теста
+2025-07-07 12:44:57 [ForkJoinPool-1-worker-3] INFO  utils.BrowserUtils - Элемент не найден или не виден. Обновляем страницу...
+2025-07-07 12:44:58 [ForkJoinPool-1-worker-1] INFO  utils.BrowserUtils - Элемент не найден или не виден. Обновляем страницу...
+2025-07-07 12:45:02 [ForkJoinPool-1-worker-3] INFO  pages.MenuPage - Попытка 1 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58624}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58624/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f39f2bd8f5ed43bab74ff227e9f47c4
+2025-07-07 12:45:05 [ForkJoinPool-1-worker-3] INFO  pages.MenuPage - Попытка 2 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58624}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58624/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f39f2bd8f5ed43bab74ff227e9f47c4
+2025-07-07 12:45:08 [ForkJoinPool-1-worker-3] INFO  pages.MenuPage - Попытка 3 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58624}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58624/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f39f2bd8f5ed43bab74ff227e9f47c4
+2025-07-07 12:45:11 [ForkJoinPool-1-worker-3] INFO  pages.MenuPage - Попытка 4 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58624}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58624/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f39f2bd8f5ed43bab74ff227e9f47c4
+2025-07-07 12:45:13 [ForkJoinPool-1-worker-4] INFO  u.ScreenshotOnFailureExtension - Скриншот сохранён: screenshots\_3__Tester__315DSCcc2-__2025-07-07_12-45-13.png
+2025-07-07 12:45:13 [ForkJoinPool-1-worker-4] INFO  tests.BaseTest - Драйвер завершён после теста
+2025-07-07 12:45:14 [ForkJoinPool-1-worker-3] INFO  pages.MenuPage - Попытка 5 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58624}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58624/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f39f2bd8f5ed43bab74ff227e9f47c4
+2025-07-07 12:45:14 [ForkJoinPool-1-worker-3] INFO  u.ScreenshotOnFailureExtension - Скриншот сохранён: screenshots\_2__Task_2_2025-07-07_12-45-14.png
+2025-07-07 12:45:15 [ForkJoinPool-1-worker-3] INFO  tests.BaseTest - Драйвер завершён после теста
+2025-07-07 12:45:20 [ForkJoinPool-1-worker-2] INFO  tests.BaseTest - Драйвер завершён после теста
+2025-07-07 12:45:27 [ForkJoinPool-1-worker-1] INFO  u.ScreenshotOnFailureExtension - Скриншот сохранён: screenshots\_2__Project_2_2025-07-07_12-45-27.png
+2025-07-07 12:45:27 [ForkJoinPool-1-worker-1] INFO  tests.BaseTest - Драйвер завершён после теста
+2025-07-07 12:45:28 [ForkJoinPool-1-worker-3] INFO  utils.BrowserUtils - Элемент не найден или не виден. Обновляем страницу...
+2025-07-07 12:45:41 [ForkJoinPool-1-worker-3] INFO  tests.BaseTest - Драйвер завершён после теста
+2025-07-07 12:45:42 [ForkJoinPool-1-worker-1] INFO  utils.BrowserUtils - Элемент не найден или не виден. Обновляем страницу...
+2025-07-07 12:45:47 [ForkJoinPool-1-worker-3] INFO  utils.BrowserUtils - Элемент не найден или не виден. Обновляем страницу...
+2025-07-07 12:45:48 [ForkJoinPool-1-worker-1] INFO  pages.MenuPage - Попытка 1 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58848/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d05c502cd74393fb414f7ccc19d77ba1
+2025-07-07 12:45:51 [ForkJoinPool-1-worker-1] INFO  pages.MenuPage - Попытка 2 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58848/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d05c502cd74393fb414f7ccc19d77ba1
+2025-07-07 12:45:54 [ForkJoinPool-1-worker-1] INFO  pages.MenuPage - Попытка 3 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58848/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d05c502cd74393fb414f7ccc19d77ba1
+2025-07-07 12:45:57 [ForkJoinPool-1-worker-1] INFO  pages.MenuPage - Попытка 4 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58848/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d05c502cd74393fb414f7ccc19d77ba1
+2025-07-07 12:46:00 [ForkJoinPool-1-worker-1] INFO  pages.MenuPage - Попытка 5 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58848/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d05c502cd74393fb414f7ccc19d77ba1
+2025-07-07 12:46:00 [ForkJoinPool-1-worker-1] INFO  u.ScreenshotOnFailureExtension - Скриншот сохранён: screenshots\_3__Project_3_2025-07-07_12-46-00.png
+2025-07-07 12:46:01 [ForkJoinPool-1-worker-1] INFO  tests.BaseTest - Драйвер завершён после теста
+2025-07-07 12:46:01 [ForkJoinPool-1-worker-3] INFO  utils.BrowserUtils - Элемент не найден или не виден. Обновляем страницу...
+2025-07-07 12:46:06 [ForkJoinPool-1-worker-3] INFO  pages.MenuPage - Попытка 1 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58900}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58900/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 799e4a346235406c0e24d2a6f827a0a2
+2025-07-07 12:46:13 [ForkJoinPool-1-worker-3] INFO  u.ScreenshotOnFailureExtension - Скриншот сохранён: screenshots\_4__Task_4_2025-07-07_12-46-13.png
+2025-07-07 12:46:13 [ForkJoinPool-1-worker-3] INFO  tests.BaseTest - Драйвер завершён после теста
+2025-07-07 12:46:19 [ForkJoinPool-1-worker-1] INFO  utils.BrowserUtils - Элемент не найден или не виден. Обновляем страницу...
+2025-07-07 12:46:29 [ForkJoinPool-1-worker-1] INFO  pages.MenuPage - Попытка 1 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58963/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2514d193792c574645b0584874e1c0a4
+2025-07-07 12:46:32 [ForkJoinPool-1-worker-1] INFO  pages.MenuPage - Попытка 2 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58963/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2514d193792c574645b0584874e1c0a4
+2025-07-07 12:46:35 [ForkJoinPool-1-worker-1] INFO  pages.MenuPage - Попытка 3 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58963/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2514d193792c574645b0584874e1c0a4
+2025-07-07 12:46:38 [ForkJoinPool-1-worker-1] INFO  pages.MenuPage - Попытка 4 не удалась: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='Новый проект'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\aduva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58963/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2514d193792c574645b0584874e1c0a4
+2025-07-07 12:46:47 [ForkJoinPool-1-worker-1] INFO  tests.BaseTest - Драйвер завершён после теста

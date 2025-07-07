@@ -2,34 +2,31 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.slf4j.Logger;
+import utils.BrowserUtils;
 import utils.WaitUtils;
 
+import static org.slf4j.LoggerFactory.getLogger;
 import static pages.AgileBoardsPage.agilePageHeader;
 import static pages.ProjectsPage.newProjectButton;
 
 public class MenuPage {
     private WebDriver driver;
+    private static final Logger logger = getLogger(MenuPage.class);
 
     private By projects = By.xpath("//a[@href='projects']");
     private By agileBoards = By.xpath("//a[@href='agiles']");
-
-    //private By profile = By.xpath("//div[@data-test='ring-dropdown ring-profile']");
-    //private By more = By.xpath("//span[@aria-label='Больше']");
+    private By profile = By.xpath("//div[@data-test='ring-dropdown ring-profile']");
 
     public MenuPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    /*
-    public void clickMore() {
-        driver.findElement(more).click();
-    }
-    */
-
     public void openProjectsPage() {
         int maxAttempts = 5;
         int attempts = 0;
         boolean success = false;
+        BrowserUtils.refreshIfMainElementMissing(driver, newProjectButton);
 
         while (attempts < maxAttempts) {
             try {
@@ -38,7 +35,7 @@ public class MenuPage {
                 success = true;
                 break;
             } catch (Exception e) {
-                System.out.println("Попытка " + (attempts + 1) + " не удалась: " + e.getMessage());
+                logger.info("Попытка " + (attempts + 1) + " не удалась: " + e.getMessage());
                 attempts++;
             }
         }
@@ -60,7 +57,7 @@ public class MenuPage {
                 success = true;
                 break;
             } catch (Exception e) {
-                System.out.println("Попытка " + (attempts + 1) + " не удалась: " + e.getMessage());
+                logger.info("Попытка " + (attempts + 1) + " не удалась: " + e.getMessage());
                 attempts++;
             }
         }
@@ -70,9 +67,7 @@ public class MenuPage {
         }
     }
 
-    /*
     public void openProfile() {
         driver.findElement(profile).click();
     }
-    */
 }

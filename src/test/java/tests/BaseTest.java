@@ -1,5 +1,8 @@
 package tests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.RegisterExtension;
 import org.openqa.selenium.By;
@@ -7,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import pages.IssuePage;
 import pages.LoginPage;
 import pages.MenuPage;
 import utils.BrowserUtils;
@@ -16,11 +21,20 @@ import utils.ScreenshotOnFailureExtension;
 import java.time.Duration;
 import java.util.stream.Stream;
 
+import static org.slf4j.LoggerFactory.getLogger;
+
 public class BaseTest {
+    private static final Logger logger = getLogger(BaseTest.class);
     protected WebDriver driver;
     protected WebDriverWait wait;
     protected LoginPage loginPage;
     protected MenuPage menuPage;
+
+    @BeforeAll
+    public static void setupDriverManager() {
+        WebDriverManager.chromedriver().setup();
+        //WebDriverManager.edgedriver().setup();
+    }
 
     @RegisterExtension
     ScreenshotOnFailureExtension screenshotExtension = new ScreenshotOnFailureExtension();
@@ -28,11 +42,11 @@ public class BaseTest {
     @BeforeEach
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
-        this.driver = new ChromeDriver(options);
+        driver = new ChromeDriver(options);
 
         //EdgeOptions edgeOptions = new EdgeOptions();
         //edgeOptions.addArguments("--inprivate");
-        //this.driver = new EdgeDriver(edgeOptions);
+        //driver = new EdgeDriver(edgeOptions);
 
         //driver.manage().window().maximize();
 
@@ -45,7 +59,14 @@ public class BaseTest {
         menuPage = new MenuPage(driver);
         driver.get("https://didzi.youtrack.cloud");
         BrowserUtils.refreshIfMainElementMissing(driver, By.xpath("//button[@type='submit']"));
-        loginPage.login("admin", "sa85BqdhWn3UeHp");
+
+        if (shouldLogin()) {
+            loginPage.login("admin", "sa85BqdhWn3UeHp");
+        }
+    }
+
+    protected boolean shouldLogin() {
+        return true;
     }
 
     protected static Stream<String> readProjectNames() throws Exception {
@@ -55,4 +76,13 @@ public class BaseTest {
     protected static Stream<String> readTaskNames() throws Exception {
         return ExcelReader.readNames("src/test/resources/testdata/task_names.xlsx").stream();
     }
+
+    @AfterEach
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+            logger.info("Драйвер завершён после теста");
+        }
+    }
+
 }

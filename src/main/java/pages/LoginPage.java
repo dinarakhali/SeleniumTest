@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.WaitUtils;
 
 public class LoginPage {
     private WebDriver driver;
@@ -18,6 +19,7 @@ public class LoginPage {
     }
 
     public void login(String username, String password) {
+        WaitUtils.waitForPageLoadComplete(driver);
         driver.findElement(loginField).sendKeys(username);
         driver.findElement(passwordField).sendKeys(password);
         driver.findElement(submitButton).click();
@@ -27,11 +29,13 @@ public class LoginPage {
         return driver.findElement(userProfile).getDomAttribute("title");
     }
 
-    /*
     public void logout() {
         MenuPage profile = new MenuPage(driver);
         profile.openProfile();
-        driver.findElement(logoutButton).click();
+        WaitUtils.waitForElementClickable(driver, logoutButton).click();
     }
-     */
+
+    public boolean isSubmitBtnVisible() {
+        return driver.findElement(submitButton).isDisplayed();
+    }
 }

@@ -1,13 +1,10 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import utils.WaitUtils;
 
-import java.time.Duration;
 import java.util.List;
 
 public class AgileBoardsPage {
@@ -24,24 +21,18 @@ public class AgileBoardsPage {
     private By boardNameField = By.xpath("//input[@name='name']");
     private By myProjectName = By.xpath("//span[@title='Тестовый проект 1']");
     private By saveNewBoardButton = By.xpath("//button[@data-test='saveNewBoard']");
-    private By boardTitle = By.xpath("//span[text()='Тестовая доска 1']");
+    private By boardTitle = By.xpath("//span[text()='Project Board']");
 
     //добавление задач на доску
     private By backlogToggler = By.xpath("//button[@data-test='backlogToggler']");
     private By addIssueButton = By.xpath("//yt-icon[@data-test='addIssueToSprintAction']");
-    private By myIssueStatusOnBoard = By.xpath("//span[text()='Тестовая задача 1']");
+    private By myIssueStatusOnBoard = By.xpath("//span[contains(text(), 'Task') or contains(text(), 'Тестовая задача')]");
 
     //удаление доски
     private By moreIcon = By.xpath("//div[@data-test='ring-dropdown']");
     private By deleteButton = By.xpath("//span[@data-test='ring-list-item-label' and text()='Удалить']");
     private By deleteBoardButton = By.xpath("//button[@data-test='confirm-ok-button']");
     private By errorMessage = By.xpath("//div[@data-test='error-message']");
-
-    /* перетаскивание задач по доске
-    private By myIssueCard = By.xpath("//div[@data-test='yt-agile-board-card__summary']//span[text()='Тестовая задача 1']");
-    private By checkedIssuesColumn = By.xpath("(//td[contains(@class, 'yt-agile-table__row__cell')])[5]");
-    private By myIssueStatus = By.xpath("//span[@data-test='ring-tooltip field-value' and text()='Проверена']");
-     */
 
     public AgileBoardsPage(WebDriver driver) {
         this.driver = driver;
@@ -69,22 +60,6 @@ public class AgileBoardsPage {
         WaitUtils.waitForElementClickable(driver, addIssueButton).click();
         WaitUtils.waitForElementClickable(driver, backlogToggler).click();
     }
-
-    /*
-    public void issueDragNDrop() {
-        WebElement myIssueCardEl = driver.findElement(myIssueCard);
-        WebElement checkedIssuesColumnEl = driver.findElement(checkedIssuesColumn);
-        Actions move = new Actions(driver);
-
-        move.clickAndHold(myIssueCardEl)
-                .moveToElement(checkedIssuesColumnEl)
-                .release()
-                .build()
-                .perform();
-
-        WaitUtils.waitForElementClickable(driver, myIssueCard).click();
-    }
-     */
 
     public String issueStatusCheck() {
         return driver.findElement(myIssueStatusOnBoard).getText();
